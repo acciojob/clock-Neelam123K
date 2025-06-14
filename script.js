@@ -1,8 +1,9 @@
 //your JS code here. If required.
+let data = document.getElementById("timer")
 function updateclock() {
-	const date = new.date();
-	const formatedate = now.toLocalString();
-	document.getElementById("timer").textContent = formatedate;
+	const date = new Date();
+	const formatedate = date.toLocaleString();
+	data.innerHTML = formatedate;
 	
 }
 updateclock();
